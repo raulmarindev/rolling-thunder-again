@@ -16,12 +16,16 @@
     "typescript",
     "node",
     "npm",
-    "eslint"
+    "eslint",
+    "template"
   ],
   "author": "Raúl Marín",
   "license": "Apache License 2.0",
   "bugs": {
     "url": "https://github.com/raulmarindev/rollup-ts-simple-starter/issues"
   },
-  "homepage": "https://github.com/raulmarindev/rollup-ts-simple-starter#readme"
+  "homepage": "https://github.com/raulmarindev/rollup-ts-simple-starter#readme",
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
 }
