@@ -13,7 +13,6 @@
     "lint-staged": "lint-staged",
     "prebuild": "npm run clean",
     "prepare": "husky install",
-    "prepublish": "npm version patch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
