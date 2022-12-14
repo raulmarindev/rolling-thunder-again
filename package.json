@@ -1,9 +1,11 @@
 {
   "name": "rollup-ts-simple-starter",
   "version": "1.0.0",
-  "description": "A simple starter template for new node packages. It uses rollup, typescript and eslint.",
-  "main": "index.js",
+  "description": "A simple starter template for new node packages. It uses rollup, typescript, eslint and prettier.",
+  "main": "dist/index.js",
   "scripts": {
+    "lint-staged": "lint-staged",
+    "prepare": "husky install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -29,6 +31,9 @@
     "@typescript-eslint/eslint-plugin": "^5.46.1",
     "@typescript-eslint/parser": "^5.46.1",
     "eslint": "^8.29.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.1.0",
+    "prettier": "2.8.1",
     "typescript": "^4.9.4"
   }
 }
