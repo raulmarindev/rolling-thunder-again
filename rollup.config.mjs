@@ -7,7 +7,6 @@ const DIST_FOLDER_FILENAME = `dist/${PACKAGE_NAME}`;
 const bundle = (config) => ({
   ...config,
   input: 'src/index.ts',
-  external: (id) => !/^[./]/.test(id),
 });
 
 export default [
@@ -15,16 +14,19 @@ export default [
     plugins: [esbuild()],
     output: [
       {
+        exports: 'default',
         file: `${DIST_FOLDER_FILENAME}.js`,
         format: 'cjs',
         sourcemap: true,
       },
       {
+        exports: 'default',
         file: `${DIST_FOLDER_FILENAME}.mjs`,
         format: 'es',
         sourcemap: true,
       },
       {
+        exports: 'default',
         file: `${DIST_FOLDER_FILENAME}.umd.js`,
         format: 'umd',
         name: PACKAGE_NAME,
