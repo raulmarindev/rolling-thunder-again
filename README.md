@@ -1,14 +1,15 @@
 # Rolling Thunder Again
 
-This repo contains a simple boilerplate/starter to create a NPM library using Rollup, including importing a module from `node_modules` and converting it from CommonJS.
+This repo contains a simple boilerplate/starter/template to create a NPM library using Rollup and TypeScript, including importing a module from `node_modules` and converting it from CommonJS.
 
 ## Getting started
 
-Clone this repository and install its dependencies:
+Select the option ```Use this template``` from the repo actions while on Github, to create a new repository of yours.
+
+Once your new repository has been created and you've cloned it as usual, you can follow the next steps:
 
 ```bash
-git clone https://github.com/raulmarindev/rollup-ts-simple-starter.git
-cd rollup-ts-simple-starter
+cd your-new-repository
 npm install
 ```
 
