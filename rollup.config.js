@@ -1,7 +1,8 @@
 import dts from 'rollup-plugin-dts';
 import esbuild from 'rollup-plugin-esbuild';
 
-const name = 'dist/ivium';
+const PACKAGE_NAME = 'your-package-name';
+const DIST_FOLDER_FILENAME = `dist/${PACKAGE_NAME}`;
 
 const bundle = (config) => ({
   ...config,
@@ -14,17 +15,17 @@ export default [
     plugins: [esbuild()],
     output: [
       {
-        file: `${name}.js`,
+        file: `${DIST_FOLDER_FILENAME}.js`,
         format: 'cjs',
         sourcemap: true,
       },
       {
-        file: `${name}.mjs`,
+        file: `${DIST_FOLDER_FILENAME}.mjs`,
         format: 'es',
         sourcemap: true,
       },
       {
-        file: `${name}.umd.js`,
+        file: `${DIST_FOLDER_FILENAME}.umd.js`,
         format: 'umd',
         sourcemap: true,
       },
@@ -33,7 +34,7 @@ export default [
   bundle({
     plugins: [dts()],
     output: {
-      file: `${name}.d.ts`,
+      file: `${DIST_FOLDER_FILENAME}.d.ts`,
       format: 'es',
     },
   }),
