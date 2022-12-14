@@ -1,13 +1,13 @@
 {
-  "name": "rollup-ts-simple-starter",
+  "name": "rolling-thunder-again",
   "version": "1.0.0",
   "description": "A simple starter template for new node packages. It uses rollup, typescript, eslint and prettier.",
-  "browser": "dist/ivium.umd.js",
-  "main": "dist/ivium.js",
-  "module": "dist/ivium.mjs",
-  "typings": "dist/ivium.d.ts",
+  "browser": "dist/your-package-name.umd.js",
+  "main": "dist/your-package-name.js",
+  "module": "dist/your-package-name.mjs",
+  "typings": "dist/your-package-name.d.ts",
   "scripts": {
-    "build": "rollup -c",
+    "build": "rollup -c && tsc",
     "clean": "rimraf dist",
     "dev": "rollup -c -w",
     "lint-staged": "lint-staged",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/raulmarindev/rollup-ts-simple-starter.git"
+    "url": "git+https://github.com/raulmarindev/rolling-thunder-again.git"
   },
   "keywords": [
     "rollup",
@@ -33,9 +33,9 @@
   "author": "Raúl Marín <hi@raulmarin.dev>",
   "license": "Apache License 2.0",
   "bugs": {
-    "url": "https://github.com/raulmarindev/rollup-ts-simple-starter/issues"
+    "url": "https://github.com/raulmarindev/rolling-thunder-again/issues"
   },
-  "homepage": "https://github.com/raulmarindev/rollup-ts-simple-starter#readme",
+  "homepage": "https://github.com/raulmarindev/rolling-thunder-again#readme",
   "devDependencies": {
     "@types/node": "^18.11.15",
     "@typescript-eslint/eslint-plugin": "^5.46.1",
@@ -50,6 +50,5 @@
     "rollup-plugin-dts": "^5.0.0",
     "rollup-plugin-esbuild": "^5.0.0",
     "typescript": "^4.9.4"
-  },
-  "type": "module"
+  }
 }
