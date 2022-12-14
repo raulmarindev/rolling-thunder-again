@@ -1,4 +1,4 @@
-# rollup-ts-simple-starter
+# Rolling Thunder Again
 
 This repo contains a simple boilerplate/starter to create a NPM library using Rollup, including importing a module from `node_modules` and converting it from CommonJS.
 
