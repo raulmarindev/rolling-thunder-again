@@ -7,7 +7,7 @@
   "module": "dist/your-package-name.mjs",
   "typings": "dist/your-package-name.d.ts",
   "scripts": {
-    "build": "rollup -c && tsc",
+    "build": "rollup -c",
     "clean": "rimraf dist",
     "dev": "rollup -c -w",
     "lint-staged": "lint-staged",
