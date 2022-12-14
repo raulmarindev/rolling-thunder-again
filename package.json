@@ -7,9 +7,12 @@
   "typings": "dist/ivium.d.ts",
   "scripts": {
     "build": "rollup -c",
+    "clean": "rimraf dist",
     "dev": "rollup -c -w",
     "lint-staged": "lint-staged",
+    "prebuild": "npm run clean",
     "prepare": "husky install",
+    "prepublish": "npm version patch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,9 +26,11 @@
     "node",
     "npm",
     "eslint",
-    "template"
+    "template",
+    "starter",
+    "boilerplate"
   ],
-  "author": "Raúl Marín",
+  "author": "Raúl Marín <hi@raulmarin.dev>",
   "license": "Apache License 2.0",
   "bugs": {
     "url": "https://github.com/raulmarindev/rollup-ts-simple-starter/issues"
@@ -39,6 +44,7 @@
     "husky": "^8.0.2",
     "lint-staged": "^13.1.0",
     "prettier": "2.8.1",
+    "rimraf": "^3.0.2",
     "rollup": "^3.7.4",
     "rollup-plugin-dts": "^5.0.0",
     "rollup-plugin-esbuild": "^5.0.0",
