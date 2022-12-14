@@ -1,6 +1,6 @@
 # Rolling Thunder Again
 
-This repo contains a simple boilerplate/starter/template to create a NPM library using Rollup and TypeScript, including importing a module from `node_modules` and converting it from CommonJS.
+This repo contains a simple boilerplate/starter/template to create a NPM library using Rollup, TypeScript and esbuild. By default, it allows building the package in the following formats: ESM, CommonJS and UMD.
 
 ## Getting started
 
