@@ -27,6 +27,7 @@ export default [
       {
         file: `${DIST_FOLDER_FILENAME}.umd.js`,
         format: 'umd',
+        name: PACKAGE_NAME,
         sourcemap: true,
       },
     ],
