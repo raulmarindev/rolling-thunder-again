@@ -2,6 +2,7 @@
   "name": "rollup-ts-simple-starter",
   "version": "1.0.0",
   "description": "A simple starter template for new node packages. It uses rollup, typescript, eslint and prettier.",
+  "browser": "dist/ivium.umd.js",
   "main": "dist/ivium.js",
   "module": "dist/ivium.mjs",
   "typings": "dist/ivium.d.ts",

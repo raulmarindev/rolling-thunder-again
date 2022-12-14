@@ -23,6 +23,11 @@ export default [
         format: 'es',
         sourcemap: true,
       },
+      {
+        file: `${name}.umd.js`,
+        format: 'umd',
+        sourcemap: true,
+      },
     ],
   }),
   bundle({
