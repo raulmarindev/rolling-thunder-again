@@ -2,8 +2,12 @@
   "name": "rollup-ts-simple-starter",
   "version": "1.0.0",
   "description": "A simple starter template for new node packages. It uses rollup, typescript, eslint and prettier.",
-  "main": "dist/index.js",
+  "main": "dist/ivium.js",
+  "module": "dist/ivium.mjs",
+  "typings": "dist/ivium.d.ts",
   "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
     "lint-staged": "lint-staged",
     "prepare": "husky install",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -30,10 +34,15 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.46.1",
     "@typescript-eslint/parser": "^5.46.1",
+    "esbuild": "^0.16.5",
     "eslint": "^8.29.0",
     "husky": "^8.0.2",
     "lint-staged": "^13.1.0",
     "prettier": "2.8.1",
+    "rollup": "^3.7.4",
+    "rollup-plugin-dts": "^5.0.0",
+    "rollup-plugin-esbuild": "^5.0.0",
     "typescript": "^4.9.4"
-  }
+  },
+  "type": "module"
 }
