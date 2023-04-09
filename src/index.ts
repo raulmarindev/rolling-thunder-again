@@ -1,3 +1,3 @@
-const test = 'hello';
+import { myTest } from './test';
 
-console.log(test);
+export default { myTest };
